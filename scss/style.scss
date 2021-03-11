@@ -1,3 +1,145 @@
-.navigation {
-    background-color:blue;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import '/slider.css';
+
+
+$mobile: 580px;
+$tablet: 870px;
+$desktop: 1024px;
+$sectionHeight: 900px;
+$headerHeight: 100px;
+
+
+main{
+
+}
+
+.movable__header{
+    font-family: 'Comfortaa', cursive;
+    height: $headerHeight;
+    position:absolute;
+    padding-top:40px;
+    width:100%;
+    background-color:rgb(228, 193, 230);
+    text-align: center;
+    font-size: 45px;
+    color:whitesmoke;
+
+    @media (max-width: $tablet){
+        font-size:30px;
+        height: $headerHeight;
+        padding:40px 0px 20px 0px;
+    }
+    @media (max-width: $mobile){
+        font-size: 15px;
+        height: $headerHeight;
+    }
+}
+.navigation{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    a {
+        text-decoration: none; /* no underline */
+        color:whitesmoke;
+        &:hover{
+            color:rgb(226, 79, 207);
+            text-shadow: 3px 2px 5px rgb(255, 255, 255)
+        }
+    }
+    @media (max-width: $tablet){
+        font-size:20px;
+    }
+    @media (max-width: $mobile){
+        font-size: 15px;
+    }
+    }
+
+.description__section{
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding:$headerHeight+160px 50px;
+    max-height: $sectionHeight;
+    
+    @media (max-width: $tablet){
+        padding-top:$headerHeight + 140px;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    @media (max-width: $mobile){
+        padding-top:$headerHeight + 120px;
+    }
+    &--description{
+        text-align: center;
+        max-width:500px;
+        margin-right: 50px;;
+    @media (max-width: $tablet){
+
+        }
+    @media (max-width: $mobile){
+        font-size:200%;
+        }
+    }
+    &-map{
+        padding:50px 50px;
+        @media (max-width: $tablet){
+
+        }
+        @media (max-width: $mobile){
+           display:none;
+        }
+    }
+
+}
+.galery__section{
+    height: $sectionHeight;
+    background-color:rgb(228, 193, 230);
+    width:100vw;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+
+    & img{
+        width:350px;
+        transition: 1s;
+        margin:20px;
+        &:hover{
+            filter:grayscale(100%);
+            transform: scale(1.1);
+        }
+    @media (max-width:1600px ){
+            width: 320px;
+        }
+    @media (max-width:1450px ){
+            width: 280px;
+        }
+    @media (max-width:1200px ){
+            width: 220px;
+    }
+    @media (max-width:1000px ){
+            width: 220px;
+        }
+    @media (max-width: $tablet){
+            width: 200px;
+        }
+    @media (max-width: $mobile){
+            width: 200px;
+        }
+    @media (max-width: 480px){
+            width: 150px;
+        }
+    @media (max-width: 380px){
+            width: 140px;
+        }
+    }
+}
+.price-list__section{
+    height: $sectionHeight;
+    background-color: white; 
+}
+footer{
+    height: 200px;
+    background-color: black;
 }

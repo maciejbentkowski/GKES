@@ -9,7 +9,9 @@
   },
   "author": "MBDev",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "lightbox2": "^2.11.3"
+  },
   "devDependencies": {
     "node-sass": "^5.0.0"
   }

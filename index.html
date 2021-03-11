@@ -1,43 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="movable__header">
-
-        <nav class="movable__header navigation">
-            <ul>
-                <li>
-    Start
-                </li>
-                <li>
-    Galeria
-                </li>
-                <li>
-    Oferta
-                </li>
-            </ul>
-            Gabinet kosmetyczny Ewa Stefańska
-        </nav>
-    </header>
     <main>
-        <section class="description__section">
-            OPIS
+        <header class="movable__header">
+            <section class="movable__header--describe">
+                Gabinet Kosmetyczny Ewa Stefańska
+            </section>
+        <nav class="movable__header navigation">
+
+                <a href="#description__section">Start</a>
+
+                <a href="#galery__section">Galeria</a>
+
+                <a href="#price-list__section">Oferta</a>
+            </nav>
+        </header>
+        <section class="description__section" id="description__section">
+            <article class = "description__section--description">
+                Gabinet Kosmetyczny Ewy Stefańskiej mieści się w Turku przy ulicy 3 Maja 18. Zapraszam na zabiegi wykonywane przez specjalistkę w branży z ponad 20 letnim doświadczeniem
+            </article>
+            <div class = description__section-map>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d613.8375845923263!2d18.49947586335531!3d52.01871511864365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471b2207582abb59%3A0x28f9b1cea2af574f!2s3%20Maja%2018%2C%2062-700%20Turek!5e0!3m2!1spl!2spl!4v1613315941414!5m2!1spl!2spl" width="400" height="450" frameborder="5" style="border: 0;" allowfullscreen="false" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         </section>
-        <section class="galery__section">
-            GALERIA
+        <section class="galery__section" id="galery__section">
+            <a href="pictures/1.png" data-lightbox="mygallery"><img src="pictures/1.png"></a>
+            <a href="pictures/1.png" data-lightbox="mygallery"><img src="pictures/1.png"></a>
+            <a href="pictures/1.png" data-lightbox="mygallery"><img src="pictures/1.png"></a>
+            <a href="pictures/1.png" data-lightbox="mygallery"><img src="pictures/1.png"></a>
+            <a href="pictures/1.png" data-lightbox="mygallery"><img src="pictures/1.png"></a>
+            <a href="pictures/1.png" data-lightbox="mygallery"><img src="pictures/1.png"></a>
+            <a href="pictures/1.png" data-lightbox="mygallery"><img src="pictures/1.png"></a>
+            <a href="pictures/1.png" data-lightbox="mygallery"><img src="pictures/1.png"></a>
+            <a href="pictures/1.png" data-lightbox="mygallery"><img src="pictures/1.png"></a>
+
         </section>
-        <section class="price-list__section">
+
+        <section class="price-list__section" id="price-list__section">
             TABELA LIST
         </section>
-
-
-
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
+<script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
